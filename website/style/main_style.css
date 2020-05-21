@@ -2,8 +2,15 @@
 /* CSS Document */
 
 :root {
-    --nav_footer_tabe_head_bg_color: #000;
-    --nav_footer_tabe_head_bg_color: #fff;
+    --nav_footer_table_head_standard_text_color: #000;
+	--nav_footer_tabe_head_bg_color: #ccc;
+	--block_accent_color: #27343F;
+	--block_accent_color_light: #4A6377;
+	--nav_link_hover: #ddd;
+	--nav_link_hover_text_color: #000;
+	--block_accent_txt_color: #fff;
+	--nav_active_tag: #eee;
+	--nav_active_tag_text_color: #000;
 }
 
 body {
@@ -28,6 +35,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     color: #111111;
 	font-weight: bold;
+	padding-bottom: 1000px;
 }
 
 .main_content p {
@@ -93,6 +101,183 @@ tr:nth-child(even){background-color: #f2f2f2}
 }
 
 /*---- NavBar ----*/
+
+nav {
+	width: 100%;
+	display: block;
+	background-color:  var(--nav_footer_tabe_head_bg_color);
+	color: var(--nav_footer_table_head_standard_text_color);
+	overflow: hidden;
+}
+
+nav a {
+	color: var(--nav_footer_table_head_standard_text_color);
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: var(--nav_link_hover_text_color);
+	background-color: var(--nav_link_hover);
+	text-decoration: none;
+}
+
+/*--- Desktop ---*/
+
+nav .nav_desktop {
+    overflow: hidden;
+    background-color: #2B424A;
+    top: 0;
+    position: fixed;
+	width: 100%;
+	height: 100px;
+	display: block;
+}
+
+nav .nav_desktop img {
+	height: 70px;
+	margin: 20px 0 0 auto;
+}
+
+nav .nav_desktop a:first-of-type {border-radius: 0 4px 0 0;}
+nav .nav_desktop a:last-of-type {border-radius: 4px 0 0 0;}
+
+nav .nav_desktop a {
+	float: right;
+	padding: 10px 12px;
+    font-size: 18px;
+	margin-top: 59px;
+	color: var(--block_accent_txt_color);
+	background-color: var(--block_accent_color);
+	font-weight: bold;
+}
+
+nav .nav_desktop a.active {
+	color: var(--nav_active_tag_text_color);
+	background-color: var(--nav_active_tag);
+}
+
+nav .nav_desktop a:hover {
+	color: var(--nav_link_hover_text_color);
+	background-color: var(--nav_link_hover);
+}
+
+/*--- Mobile ---*/
+
+nav .nav_mobile {
+	overflow: hidden;
+    top: 0;
+    position: fixed;
+	height: 48px;
+	background-color:  var(--nav_footer_tabe_head_bg_color);
+	width: 100%;
+}
+
+nav .nav_mobile #mobile_links {
+    display: none;
+}
+
+nav .nav_mobile a {
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+	background-color: var(--nav_footer_tabe_head_bg_color);
+	margin: 0;
+	font-weight: bold;
+}
+
+nav .nav_mobile #mobile_links a:hover {
+	color: var(--nav_link_hover_text_color);
+	background-color: var(--nav_link_hover);
+}
+
+nav .nav_mobile #mobile_links {
+	position: fixed;
+	top: 48px;
+	width: 100%;
+	margin: 0;
+	overflow: hidden;
+	-webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+	height: 0px;
+}
+nav .nav_mobile a.icon:hover + #nav_mobile_link_spacer {
+	background-color: var(--nav_link_hover);
+}
+
+nav .nav_mobile a.icon {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+	color: var(--block_accent_txt_color);
+	background-color: var(--block_accent_color);
+}
+nav .nav_mobile a.icon:hover {
+	color: var(--nav_link_hover_text_color);
+	background-color: var(--nav_link_hover);
+}
+
+nav .nav_mobile img {
+    height: 33px;
+    width: auto;
+    padding: 8px;
+    margin-left: 5px;
+}
+
+#nav_mobile_link_spacer {
+	display: block;
+	width: 100%;
+	height: 5px;
+}
+
+#nav_spacer {
+	display: block;
+	width: 100%;
+	height: 0px;
+	-webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+
+/*---- Footer ----*/
+
+footer {
+	background-color: var(--nav_footer_tabe_head_bg_color);
+	color: var(--nav_footer_table_head_standard_text_color);
+	width: 100%;
+	display: block;
+	min-height: 100px;
+}
+
+footer a {
+	color: var(--nav_footer_table_head_standard_text_color);
+	font-weight: 550;
+	text-decoration: none;
+}
+footer a:hover {
+	text-decoration: underline;
+}
+
+footer .footer_content {
+	display: block;
+	margin: 0 auto;
+	padding: 10px 0 30px;
+	height: auto;
+	text-align: center;
+}
+
+footer .footer_content .footer_nav_links {
+	width: 100%;
+	display: block;
+	margin: 0;
+	text-align: center;
+}
 
 /*---- Scaling ----*/
 /*--- Width ---*/
