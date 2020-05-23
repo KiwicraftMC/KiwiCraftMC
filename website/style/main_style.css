@@ -307,7 +307,7 @@ h1 {
 /*-- Tablets --*/
 @media only screen and (min-width: 600px) {
     .main_content, .footer_content {
-        width: 75%;
+        width: 85%;
     }
 }
 
