@@ -60,6 +60,22 @@ h1, h2, h3, h4, h5, h6 {
 	background-attachment: scroll;
 }
 
+#link_to_map {
+	background-color: var(--nav_footer_tabe_head_bg_color);
+	padding: 10px;
+	border-radius: 5px;
+	display: block;
+	margin: auto;
+	text-align: center;
+	width: 20%;
+	color: var(--nav_footer_table_head_standard_text_color);
+	text-decoration: none;
+}
+#link_to_map:hover {
+	background-color: var(--nav_link_hover);
+	color: var(--nav_link_hover_text_color);
+}
+
 /*---- Tables ----*/
 
 .table_container {
