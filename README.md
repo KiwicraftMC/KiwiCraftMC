@@ -1,2 +1,2 @@
 # KiwiCraftMC
-Official KiwiCaftMC website
+Official KiwiCraftMC website
