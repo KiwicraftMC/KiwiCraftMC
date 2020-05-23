@@ -53,6 +53,11 @@ h1, h2, h3, h4, h5, h6 {
 	width: 100%;
 	height: 450px;
 	margin: 10px 0;
+	background-image: url(../images/map_error.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: scroll;
 }
 
 /*---- Tables ----*/
