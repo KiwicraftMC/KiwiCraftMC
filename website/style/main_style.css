@@ -15,7 +15,7 @@
 
 body {
     width: 100%;
-    margin: auto;
+    margin: 0;
 	background-color: #FFF;
 }
 
@@ -28,14 +28,13 @@ body {
 	font-size: medium;
     text-align: justify;
     padding-bottom: 0;
-	min-height: 400px;
+	min-height: 1000px;
 }
 
 h1, h2, h3, h4, h5, h6 {
     text-align: center;
     color: #111111;
 	font-weight: bold;
-	padding-bottom: 1000px;
 }
 
 .main_content p {
@@ -48,6 +47,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 .main_content img:hover {
 	opacity: 1.0;
+}
+
+.server_map {
+	width: 100%;
+	height: 450px;
+	margin: 10px 0;
 }
 
 /*---- Tables ----*/
@@ -125,12 +130,12 @@ nav a:hover {
 
 nav .nav_desktop {
     overflow: hidden;
-    background-color: #2B424A;
     top: 0;
     position: fixed;
-	width: 100%;
 	height: 100px;
-	display: block;
+	background-color:  var(--nav_footer_tabe_head_bg_color);
+	width: 60%;
+	padding: 0 20%;
 }
 
 nav .nav_desktop img {
@@ -285,6 +290,9 @@ footer .footer_content .footer_nav_links {
 .main_content, .footer_content {
     width: 90%;
 }
+.main_content {
+	margin-top: 48px;
+}
 .nav_mobile {
 	display: block;
 }
@@ -307,7 +315,7 @@ h1 {
 @media only screen and (min-width: 768px) {
     .main_content, .footer_content {
         width: 60%;
-    }
+	}
 	h1 {
 		font-size: 35px;
 	}
@@ -318,10 +326,11 @@ h1 {
         display: none;
     }
     .nav_desktop {
-        display: block;
-		width: 60%;
-		margin-left: 20%;
-    }
+		display: block;
+	}
+	.main_content {
+		margin-top: 100px;
+	}
 
 	/* 4k */
 	@media only screen and (max-height: 2160px) {
