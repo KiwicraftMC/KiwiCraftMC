@@ -80,11 +80,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .table_container {
 	overflow-x: auto;
+	width: 95%;
+	margin-left: 2.5%;
+	display: block;
 }
 
 table {
-	width: 95%;
-	margin-left: 2.5%;
 	border-spacing: 0;
 	border-collapse: collapse;
 	border: 1px solid #ddd;
