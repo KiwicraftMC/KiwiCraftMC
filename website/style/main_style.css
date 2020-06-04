@@ -45,9 +45,38 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 5px;
 }
 
-.towny_map {
+.maps {
 	width: 100%;
 	margin: 10px 0;
+}
+.maps #map_large {
+	background-color: #555;
+	width: 100%;
+	height: auto;
+	margin: 10px 0 0 0;
+	display: block;
+}
+.maps #map_large img {
+	width: 98%;
+	padding: 3px 1% 0;
+	border-radius: 0;
+}
+
+#towny_map {direction: block;}
+#iron_deposits, #coal_deposits, #gold_deposits, #diamond_deposits {display: none;}
+
+.maps #map_selector {
+	background-color: #555;
+	width: 100%;
+	height: auto;
+	margin: 0 0 10px 0;
+	display: block;
+}
+.maps #map_selector img {
+	width: 18%;
+	padding: 3px 1%;
+	display: inline-block;
+	border-radius: 0;
 }
 
 #link_to_map {

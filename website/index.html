@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="style/main_style.css">
 	<!-- Script -->
 	<script type="text/javascript" src="script/nav_mobile_script.js"></script>
+	<script type="text/javascript" src="script/misc.js"></script>
 	
 	<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -40,7 +41,14 @@
 		<h1>KiwiCraft</h1>
 
 		<h3>Map</h3>
-		<img src="images/towny_map.png" title="Towny Map 1:1000" alt="Towny Map 1:1000" class="towny_map">
+		<div class="maps">
+			<div id="map_large">
+				<img src="images/maps/towny_map.png" id="towny_map" title="Towny Map 1:1000" alt="Towny Map 1:1000" class="towny_map"><img src="images/maps/towny_map-coal_deposits.png" id="coal_deposits" title="coal_deposits" alt="coal_deposits"><img src="images/maps/towny_map-iron_deposits.png" id="iron_deposits" title="iron_deposits" alt="iron_deposits"><img src="images/maps/towny_map-gold_deposits.png" id="gold_deposits" title="gold_deposits" alt="gold_deposits"><img src="images/maps/towny_map-diamond_deposits.png" id="diamond_deposits" title="diamond_deposits" alt="diamond_deposits">
+			</div>
+			<div id="map_selector">
+				<a href="javascript:void(0);" onClick="mapSelect(0)"><img src="images/maps/towny_map.png" id="towny_map_icon" title="Towny Map 1:1000" alt="Towny Map 1:1000" class="towny_map"></a><a href="javascript:void(0);" onClick="mapSelect(1)"><img src="images/maps/towny_map-coal_deposits.png" id="coal_deposits_icon" title="coal_deposits" alt="coal_deposits"></a><a href="javascript:void(0);" onClick="mapSelect(2)"><img src="images/maps/towny_map-iron_deposits.png" id="iron_deposits_icon" title="iron_deposits" alt="iron_deposits"></a><a href="javascript:void(0);" onClick="mapSelect(3)"><img src="images/maps/towny_map-gold_deposits.png" id="gold_deposits_icon" title="gold_deposits" alt="gold_deposits"></a><a href="javascript:void(0);" onClick="mapSelect(4)"><img src="images/maps/towny_map-diamond_deposits.png" id="diamond_deposits_icon" title="diamond_deposits" alt="diamond_deposits"></a>
+			</div>
+		</div>
 		<a id="link_to_map" href="http://64.40.8.28:8123/" target="_blank">Live Map</a>
 	</div>
 
